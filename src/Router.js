@@ -7,31 +7,62 @@ import p3 from './pic/p3.jpg';
 import p4 from './pic/p4.jpg';
 import {Banner,Timeline} from './Main';
 import {SelfIntro,Social} from './Contact';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import {NavList,Content} from './projects/ProjectContent'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {NavList,Content} from './projects/ProjectContent';
+import posed, { PoseGroup } from 'react-pose';
+
+const RouteContainer = posed.div({
+  enter: { opacity: 1, delay: 300, beforeChildren: true },
+  exit: { opacity: 0 }
+});
+
+const NavPress = posed.div({
+  pressable:true,
+  init:{scale:1},
+  press:{scale:0.8}
+})
 
 function Test(){
     return(
-      <Router>
-          <div class="container">
-            <ul class="nav justify-content-center" style={{ fontSize: '1.4em', marginTop: '0px' }}>
-              <li class="nav-item">
-                <Link to="/" class="nav-link active" >About Me</Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/projects" class="nav-link" >Projects</Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/contact" class="nav-link" >Contact</Link>
-              </li>
-            </ul>
-            <Route exact path="/" component={Home}/>
-            <Route path="/projects" component={Projects}/>
-            <Route path="/contact" component={About}/>
-            <Route path="/item" component={Item}/>
+      <Route render={({location})=>(
+        <div class="container">
+            
+              <ul class="nav justify-content-center" style={{ fontSize: '1.4em', marginTop: '0px' }}>
+                <NavPress>
+                  <li class="nav-item">
+                    <Link to="/" class="nav-link active" >About Me</Link>
+                  </li>
+                </NavPress>
+                <NavPress>
+                  <li class="nav-item">
+                    <Link to="/projects" class="nav-link" >Projects</Link>
+                  </li>
+                </NavPress>
+                <NavPress>
+                  <li class="nav-item">
+                    <Link to="/contact" class="nav-link" >Contact</Link>
+                  </li>
+                </NavPress>         
+                </ul>   
+            
+            <PoseGroup>
+              <RouteContainer key={location.pathname}>
+                <Switch location={location}>
+                  <Route exact path="/" component={Home} key="home"/>
+                  <Route path="/projects" component={Projects} key="projects"/>
+                  <Route path="/contact" component={About} key="about"/>
+                  <Route path="/item" component={Item} key="item"/>
+                </Switch>      
+              </RouteContainer>    
+            </PoseGroup>
+            
+           
 
           </div>
-      </Router>
+      )
+      }/>
+          
+    
     )
   }
 

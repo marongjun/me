@@ -1,5 +1,16 @@
 import React from 'react';
 import './style.css';
+import SplitText from 'react-pose-text';
+
+const charPoses = {
+  exit: { opacity: 0, y: 20 },
+  enter: {
+    opacity: 1,
+    y: 0,
+    delay: ({ charIndex }) => charIndex * 30
+  }
+};
+
 class Banner extends React.Component {
   constructor (props) {
     super()
@@ -28,7 +39,7 @@ class Banner extends React.Component {
 
         <div class= "shaped" >
         </div>
-        <p style={{ fontSize: '8vw' }}>Rongjun</p>
+        <p style={{ fontSize: '8vw' }} ><SplitText charPoses={charPoses}>Rongjun</SplitText></p>
         <p style={{ fontSize: '4vw' }}>{textThatChanges} </p>
 
       </div>
@@ -76,7 +87,7 @@ class Timeline extends React.Component {
               <div class="card-body">
                 <div class="float-right text-muted small">Sep 2017 - March 2018</div>
                 <h4 class="card-title text-muted">Internship at ABB Corperate Research Center China </h4>
-                <p class="card-text">Sensor Calibration<br/>Assisting Experiment<br/>Helping design new monitoring system<br/>
+                <p class="card-text"><br/>Assisting Experiment<br/>Helping design new monitoring system<br/>
                 Literature Review</p>
                
               </div>
