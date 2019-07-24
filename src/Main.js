@@ -76,16 +76,9 @@ class Timeline extends React.Component {
               <div class="card-body">
                 <div class="float-right text-muted small">Sep 2017 - March 2018</div>
                 <h4 class="card-title text-muted">Internship at ABB Corperate Research Center China </h4>
-                <p class="card-text"></p>
-                <button class="btn btn-sm btn-outline-secondary" type="button" data-target="#t22_details" data-toggle="collapse">Show Details ▼</button>
-                <div class="collapse border" id="t22_details">
-                  <div class="p-2 ">
-                    <div>Sensor Calibration</div>
-                    <div>Assisting Experiment </div>
-                    <div>Helping design new monitoring system</div>
-                    <div>Literature Review</div>
-                  </div>
-                </div>
+                <p class="card-text">Sensor Calibration<br/>Assisting Experiment<br/>Helping design new monitoring system<br/>
+                Literature Review</p>
+               
               </div>
             </div>
           </div>

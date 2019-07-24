@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style.css';
-import screenshots from '../pic/screenshots.jpg';
+import screenshots from '../pic/screenshots.png';
 import BI1 from '../pic/BI1.png';
 import BI2 from '../pic/BI3.png';
 import BI3 from '../pic/BI3.png';

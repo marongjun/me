@@ -3,7 +3,7 @@ import React from 'react';
 import './style.css';
 import profile from './pic/img.jpg';
 
-class Contact extends React.Component {
+class SelfIntro extends React.Component {
     render () {
       return (
         <div class="container col-lg-8">
@@ -46,4 +46,4 @@ class Contact extends React.Component {
     }
   }
 
-  export {Contact,Social};
+  export {SelfIntro,Social};
