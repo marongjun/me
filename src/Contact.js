@@ -2,27 +2,40 @@
 import React from 'react';
 import './style.css';
 import profile from './pic/img.jpg';
+import posed from 'react-pose';
+
+const Container = posed.div({
+  enter: {staggerChildren :50},
+  exit:{staggerChildren:20,staggerDirection:-1},
+})
+
+const P = posed.p({
+  enter:{y:0,opacity:1},
+  exit:{y:50,opacity:0}
+})
 
 class SelfIntro extends React.Component {
     render () {
       return (
-        <div class="container col-lg-8">
-          <img src={profile} alt="profile" class="rounded-circle" width="200px" height="200px"/>
-          <div style={{ marginTop: '10%' }}>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum
-            consectetur libero id faucibus nisl. Mi bibendum neque egestas congue quisque egestas
-            diam in. Integer vitae justo eget magna fermentum iaculis. Vestibulum morbi blandit
-            cursus risus. Eget sit amet tellus cras. Ullamcorper eget nulla facilisi etiam.
-             Egestas pretium aenean pharetra magna ac placerat vestibulum. Tincidunt lobortis
-             feugiat vivamus at augue eget arcu dictum. Hac habitasse platea dictumst vestibulum.
-              Rutrum quisque non tellus orci ac auctor augue mauris augue. Tortor condimentum
-              lacinia quis vel eros donec. Morbi tincidunt augue interdum velit euismod in
-              pellentesque massa. Semper viverra nam libero justo laoreet.
-            </p>
+        <Container>
+          <div class="container col-lg-8">
+            <div style={{marginTop:'10%'}}>
+            <img src={profile} alt="profile" class="rounded-circle" width="200px" height="200px"/>
+            </div>       
+            <div style={{ marginTop: '10%'}}>
+              <P>
+              I am Rongjun, did my bachelor in China on Internet of Thing, from which I learned a lot about engineering. 
+              After graduation, with a passion for Interaction design and curiosity for multicultural communication 
+              experience, I came to Europe(One year in Finland and the second in Netherland) for pursuing a master 
+              degree in Human and Computer Interaction Design. <br/><br/>
+              I love music, travelling, sports, and the best, dogs. If you are interested in my experience, have 
+              any further questions or just feel like saying hello, I’d love to hear from you:)
+              <br/>rongjun.ma@outlook.com
+              </P>
+            </div>
           </div>
-        </div>
+        </Container>
+        
       )
     }
   }

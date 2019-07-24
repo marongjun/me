@@ -2,10 +2,14 @@ import React from 'react';
 import '../style.css';
 import screenshots from '../pic/screenshots.png';
 import BI1 from '../pic/BI1.png';
-import BI2 from '../pic/BI3.png';
+import BI2 from '../pic/BI2.png';
 import BI3 from '../pic/BI3.png';
 import BI4 from '../pic/BI4.png';
+import nokia1 from '../pic/nokia1.png';
+import nokia2 from '../pic/nokia2.png';
+import nokia3 from '../pic/nokia3.png';
 import posed from 'react-pose';
+import Carousel from 'react-bootstrap/Carousel';
 
 const Container = posed.div({
   enter: {staggerChildren :50},
@@ -39,7 +43,7 @@ class NavList extends React.Component {
                     {/* ----------Overview-------- */}
                     <div class="justify-content-center" style={{ display: 'flex' }}>
                       <div class="col-lg-8">
-                        <P class="bg-light " style={{ fontSize: '1.5rem' }}><br/>Overview</P>
+                        <P style={{ fontSize: '1.5rem' }}><br/>Overview</P>
                         <P class="content"><br/>During the four-month internship at Nokia, my topic is to help a team under 5G product management department
                           to <u>develop an automation tool for market scouting information management and data visualization</u>. I am responsible for
                           designing and implementing the whole work flow from requirement specifiying, prototype designing and application implementing.
@@ -54,7 +58,7 @@ class NavList extends React.Component {
                     {/* ----------Web Development-------- */}
                     <div class="justify-content-center" style={{ display: 'flex', marginTop: '5%' }}>
                       <div class="col-lg-8">
-                        <P class="bg-light title" style={{ fontSize: '1.5rem' }}>Web Development</P>
+                        <P style={{ fontSize: '1.5rem' }}>Web Development</P>
                         <P class="content">
                           <br/><b>Specifiying Requirements</b><br/>
                         The idea is to create am automation tool to optimize the current working way with excel and store data distributedly among team
@@ -67,32 +71,18 @@ class NavList extends React.Component {
                     </div>
                     {/* ----------img sldies-------- */}
                     <div class="justify-content-center" style={{ display: 'flex' }}>
-                      <div id="nokiaDesign" class="carousel slide col-lg-8 col-md-10" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <li data-target="#nokiaDesign" data-slide-to="0" class="active"></li>
-                          <li data-target="#nokiaDesign" data-slide-to="1"></li>
-                          <li data-target="#nokiaDesign" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="pic/nokia1.png" alt="First slide" style={{ padding: '10%' }}/>
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="pic/nokia2.png" alt="Second slide" style={{ padding: '10%' }}/>
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="pic/nokia3.png" alt="Third slide" style={{ padding: '10%' }}/>
-                          </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#nokiaDesign" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#nokiaDesign" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
+                      <Carousel>
+                          <Carousel.Item>
+                            <img class="d-block w-100" src={nokia1} alt="First slide" style={{ padding: '10%' }}/>
+                          </Carousel.Item>
+                          <Carousel.Item>
+                            <img class="d-block w-100" src={nokia2} alt="Second slide" style={{ padding: '10%' }}/>
+                          </Carousel.Item>
+                          <Carousel.Item>
+                            <img class="d-block w-100" src={nokia3} alt="Third slide" style={{ padding: '10%' }}/>
+                          </Carousel.Item>
+                      </Carousel>
+                    
                     </div>
                     {/* ----------Prototype-------- */}
                     <div class="justify-content-center" style={{ display: 'flex' }}>
@@ -123,7 +113,7 @@ class NavList extends React.Component {
                     {/* ---------SharePoint & PowerBI------- */}
                     <div class="justify-content-center" style={{ display: 'flex', marginTop: '5%' }}>
                       <div class="col-lg-8">
-                        <h class="bg-light title" style={{ fontSize: '1.5rem' }}>SharePoint and PowerBI</h><br/><br/>
+                        <P style={{ fontSize: '1.5rem' }}>SharePoint and PowerBI</P><br/><br/>
                         <P class="content">
                       With the same Requirements, I quickly transformed the previous output using the MicroSoft SharePoint to create
                       a team site with the same function and then launched the first version with our team to test. The team
@@ -143,16 +133,16 @@ class NavList extends React.Component {
                       <div class="col-lg-8">
                         <div class="gallery">
                           <figure class="gallery__item gallery__item--1">
-                            <img src={BI1} class="shadow gallery__img" alt="Image 1"/>
+                            <img src={BI1} class="shadow gallery__img" alt="Map distribution"/>
                           </figure>
                           <figure class="gallery__item gallery__item--2">
-                            <img src={BI2} class="shadow gallery__img" alt="Image 2"/>
+                            <img src={BI2} class="shadow gallery__img" alt="Barchart"/>
                           </figure>
                           <figure class="gallery__item gallery__item--3">
-                            <img src={BI3} class="shadow gallery__img" alt="Image 3"/>
+                            <img src={BI3} class="shadow gallery__img" alt="SiteContent"/>
                           </figure>
                           <figure class="gallery__item gallery__item--4">
-                            <img src={BI4} class="shadow gallery__img" alt="Image 4"/>
+                            <img src={BI4} class="shadow gallery__img" alt="Timeline"/>
                           </figure>
                         </div>
                       </div>
