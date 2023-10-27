@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/me/static/css/main.81ad51e5.chunk.css",
+    "main.js": "/me/static/js/main.c6469fd3.chunk.js",
+    "main.js.map": "/me/static/js/main.c6469fd3.chunk.js.map",
+    "runtime~main.js": "/me/static/js/runtime~main.7f73a39c.js",
+    "runtime~main.js.map": "/me/static/js/runtime~main.7f73a39c.js.map",
+    "static/js/2.bb076801.chunk.js": "/me/static/js/2.bb076801.chunk.js",
+    "static/js/2.bb076801.chunk.js.map": "/me/static/js/2.bb076801.chunk.js.map",
+    "index.html": "/me/index.html",
+    "precache-manifest.693df91e76387561a604586e6e5b021d.js": "/me/precache-manifest.693df91e76387561a604586e6e5b021d.js",
+    "service-worker.js": "/me/service-worker.js",
+    "static/css/main.81ad51e5.chunk.css.map": "/me/static/css/main.81ad51e5.chunk.css.map",
+    "static/media/BI1.png": "/me/static/media/BI1.d2c04dec.png",
+    "static/media/BI2.png": "/me/static/media/BI2.03f18edf.png",
+    "static/media/BI3.png": "/me/static/media/BI3.9dc269c8.png",
+    "static/media/BI4.png": "/me/static/media/BI4.d6405f7d.png",
+    "static/media/CHI_present.JPG": "/me/static/media/CHI_present.27ac219b.JPG",
+    "static/media/Chester.jpg": "/me/static/media/Chester.319cd6cd.jpg",
+    "static/media/nokia1.png": "/me/static/media/nokia1.06acdd54.png",
+    "static/media/nokia2.png": "/me/static/media/nokia2.853098f9.png",
+    "static/media/nokia3.png": "/me/static/media/nokia3.559b1292.png",
+    "static/media/p1.jpg": "/me/static/media/p1.d697816c.jpg",
+    "static/media/p2.jpg": "/me/static/media/p2.c79ad7f1.jpg",
+    "static/media/p3.jpg": "/me/static/media/p3.73de3eac.jpg",
+    "static/media/p4.jpg": "/me/static/media/p4.b3090acc.jpg",
+    "static/media/screenshots.png": "/me/static/media/screenshots.7597169f.png",
+    "static/media/style.css": "/me/static/media/testa.4ab87b87.jpg"
+  }
+}
