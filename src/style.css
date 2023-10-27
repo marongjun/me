@@ -19,8 +19,13 @@ body {
 
 .container{
   overflow: hidden;
+  justify-content: center;
   /* display: flex; */
   align-items: center;/*垂直居中*/
+}
+
+.centered-div {
+  text-align: center;
 }
 
 .shaped{

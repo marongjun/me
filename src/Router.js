@@ -8,7 +8,8 @@ import p4 from './pic/p4.jpg';
 import {Banner,Timeline} from './Main';
 import {SelfIntro,Social} from './Contact';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import {NavList,Content} from './projects/ProjectContent';
+import {NavList,Content} from './projects/ProjectContent_Nokia';
+import {NavList_clutter,Content_clutter} from './projects/ProjectContent_BrowserClutter';
 import posed, { PoseGroup } from 'react-pose';
 
 const RouteContainer = posed.div({
@@ -51,7 +52,8 @@ function Test(){
                   <Route exact path="/" component={Home} key="home"/>
                   <Route path="/projects" component={Projects} key="projects"/>
                   <Route path="/contact" component={About} key="about"/>
-                  <Route path="/item" component={Item} key="item"/>
+                  <Route path="/item1" component={Item1} key="item1"/>
+                  <Route path="/item2" component={Item2} key="item2"/>
                 </Switch>      
               </RouteContainer>    
             </PoseGroup>
@@ -94,25 +96,30 @@ function Projects({match}){
                 <h5 class="card-title">by Rongjun Ma</h5>
                 {/* <!--Card--> */}
                 <div class="row">
+
                   {/* project 1  */}
                   <div class="view col-md-6 my-1">
                     {/* <div class="view"> */}
                     {/* <img class="img-fluid" src="pic/p1.jpg" alt="" style={{ cursor: 'pointer' }}
                       onClick={this.imgClick.bind(this, 'projectcontent.html')}/> */}
-                    <Link to={"/item"}>
+                    <Link to={"/item1"}>
                       <img class="img-fluid" src={p1} alt="" />
+                      <div class="overlay">
+                        <div class="text">Understand information overload in web browsing<br/>
+                          <span style={{ fontSize: '30px', color: '#124191' }}>Browsing Clutter</span></div>
+                      </div>
+                    </Link>
+                  </div>
+                  
+                  {/* project 2  */}
+                  <div class="view col-md-6 my-1">
+                  <Link to={"/item2"}>
+                      <img class="img-fluid" src={p2} alt="" />
                       <div class="overlay">
                         <div class="text">Automation Tool for information management<br/>
                           <span style={{ fontSize: '30px', color: '#124191' }}>Nokia</span></div>
                       </div>
                     </Link>
-  
-                  </div>
-                  {/* project 2  */}
-                  <div class="col-md-6 my-1">
-                    <div class="view">
-                      <img class="img-fluid" src={p2} alt=""/>
-                    </div>
                   </div>
   
                   {/* project 3  */}
@@ -135,7 +142,8 @@ function Projects({match}){
             </div>
             {/* <!--Main card--> */}
           </div>
-          <Route path={"/item"} component={Item} />
+          <Route path={"/item1"} component={Item1} />
+          <Route path={"/item2"} component={Item2} />
         </div>
             <Footer />
           </div>
@@ -143,7 +151,15 @@ function Projects({match}){
   )
 }
 
-function Item(){
+function Item1(){
+  return (
+  <div>
+    <NavList_clutter />
+    <Content_clutter />
+  </div>)
+}
+
+function Item2(){
   return (
   <div>
     <NavList />
