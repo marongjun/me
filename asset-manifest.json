@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/me/static/css/main.81ad51e5.chunk.css",
-    "main.js": "/me/static/js/main.abe7a003.chunk.js",
-    "main.js.map": "/me/static/js/main.abe7a003.chunk.js.map",
+    "main.js": "/me/static/js/main.bba4ae0d.chunk.js",
+    "main.js.map": "/me/static/js/main.bba4ae0d.chunk.js.map",
     "runtime~main.js": "/me/static/js/runtime~main.7f73a39c.js",
     "runtime~main.js.map": "/me/static/js/runtime~main.7f73a39c.js.map",
-    "static/js/2.bb076801.chunk.js": "/me/static/js/2.bb076801.chunk.js",
-    "static/js/2.bb076801.chunk.js.map": "/me/static/js/2.bb076801.chunk.js.map",
+    "static/js/2.8067ffef.chunk.js": "/me/static/js/2.8067ffef.chunk.js",
+    "static/js/2.8067ffef.chunk.js.map": "/me/static/js/2.8067ffef.chunk.js.map",
     "index.html": "/me/index.html",
-    "precache-manifest.1d1fa1421a93fd44736458249942baed.js": "/me/precache-manifest.1d1fa1421a93fd44736458249942baed.js",
+    "precache-manifest.c91ae2458b99826b9e603bfe19464550.js": "/me/precache-manifest.c91ae2458b99826b9e603bfe19464550.js",
     "service-worker.js": "/me/service-worker.js",
     "static/css/main.81ad51e5.chunk.css.map": "/me/static/css/main.81ad51e5.chunk.css.map",
     "static/media/BI1.png": "/me/static/media/BI1.d2c04dec.png",
@@ -17,6 +17,8 @@
     "static/media/BI4.png": "/me/static/media/BI4.d6405f7d.png",
     "static/media/CHI_present.JPG": "/me/static/media/CHI_present.27ac219b.JPG",
     "static/media/Chester.jpg": "/me/static/media/Chester.319cd6cd.jpg",
+    "static/media/browsing_clutter1.png": "/me/static/media/browsing_clutter1.3a1ba065.png",
+    "static/media/model.png": "/me/static/media/model.59954830.png",
     "static/media/nokia1.png": "/me/static/media/nokia1.06acdd54.png",
     "static/media/nokia2.png": "/me/static/media/nokia2.853098f9.png",
     "static/media/nokia3.png": "/me/static/media/nokia3.559b1292.png",
@@ -25,6 +27,7 @@
     "static/media/p3.jpg": "/me/static/media/p3.73de3eac.jpg",
     "static/media/p4.jpg": "/me/static/media/p4.b3090acc.jpg",
     "static/media/screenshots.png": "/me/static/media/screenshots.7597169f.png",
+    "static/media/seriousness.jpeg": "/me/static/media/seriousness.284c9722.jpeg",
     "static/media/style.css": "/me/static/media/testa.4ab87b87.jpg"
   }
 }
